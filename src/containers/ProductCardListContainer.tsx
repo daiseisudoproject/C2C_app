@@ -50,7 +50,7 @@ const ProductCardListContainer = ({
       {!isLoading &&
         products.map((p) => (
           <Box key={p.id}>
-            <Link href={`/products/${p.id}`} passHref>
+            <Link href={`/products/${p.id}`} passHref legacyBehavior>
               <a>
                 {/* 商品カード */}
                 <ProductCard
