@@ -39,7 +39,7 @@ const HomePage: NextPage<HomePageProps> = ({
 
   return (
     <Layout>
-      <Flex padding={2} justifyContent="center" backgroundColor="primary">
+      <Flex padding={2} justifyContent="center" backgroundColor="green">
         <Flex
           width={{ base: '100%', md: '1040px' }}
           justifyContent="space-between"
@@ -50,8 +50,8 @@ const HomePage: NextPage<HomePageProps> = ({
             <Text as="h1" marginBottom={0} color="white" variant="extraLarge">
               Daisei Shopで
             </Text>
-            <Text as="h1" marginTop={0} color="white" variant="extraLarge">
-              お気に入りのアイテムを見つけよう
+            <Text as="h1" marginTop={0} color="white" variant="large">
+              アイテムを買ったり売ったりしてみよう
             </Text>
           </Box>
           <Box width="100%">
