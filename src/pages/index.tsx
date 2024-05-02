@@ -56,7 +56,8 @@ const HomePage: NextPage<HomePageProps> = ({
           </Box>
           <Box width="100%">
             <Text as="p" color="white" variant="mediumLarge">
-              Daisei ShopはNext.jsアプリケーション開発で使われるデモアプリです。モックサーバを使用しています。
+              Daisei
+              ShopはNext.jsアプリケーション開発で使われるデモアプリです。モックサーバを使用しています。
               ソースコードは
               <Text
                 as="a"

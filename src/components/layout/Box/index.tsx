@@ -4,6 +4,7 @@ import type { Responsive } from 'types/styles'
 import { toPropValue, Color, Space } from 'utils/styles'
 
 export type BoxProps = {
+  children?: React.ReactNode; // childrenを追加
   color?: Responsive<Color>
   backgroundColor?: Responsive<Color>
   width?: Responsive<string>

@@ -11,7 +11,7 @@ const AppLogo = () => (
   >
     <rect width="40" height="40" rx="6" fill="url(#paint0_linear)" />
     <path
-        d="M10 10
+      d="M10 10
         v20
         a10 10 0 0 0 10 10
         h10
