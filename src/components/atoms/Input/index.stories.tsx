@@ -1,38 +1,38 @@
-import { ComponentMeta, ComponentStory } from '@storybook/react'
-import Input from './index'
+import { ComponentMeta, ComponentStory } from "@storybook/react";
+import Input from "./index";
 
 export default {
-  title: 'Atoms/Input',
+  title: "Atoms/Input",
   argTypes: {
     placeholder: {
-      control: { type: 'text' },
-      description: 'プレースホルダー',
+      control: { type: "text" },
+      description: "プレースホルダー",
       table: {
-        type: { summary: 'string' },
+        type: { summary: "string" },
       },
     },
     hasBorder: {
-      control: { type: 'boolean' },
+      control: { type: "boolean" },
       defaultValue: true,
-      description: 'ボーダーフラグ',
+      description: "ボーダーフラグ",
       table: {
-        type: { summary: 'boolean' },
+        type: { summary: "boolean" },
       },
     },
     hasError: {
-      control: { type: 'boolean' },
+      control: { type: "boolean" },
       defaultValue: false,
-      description: 'バリデーションエラーフラグ',
+      description: "バリデーションエラーフラグ",
       table: {
-        type: { summary: 'boolean' },
+        type: { summary: "boolean" },
       },
     },
   },
-} as ComponentMeta<typeof Input>
+} as ComponentMeta<typeof Input>;
 
-const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />
+const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 
-export const Normal = Template.bind({})
+export const Normal = Template.bind({});
 
-export const Error = Template.bind({})
-Error.args = { hasError: true }
+export const Error = Template.bind({});
+Error.args = { hasError: true };
