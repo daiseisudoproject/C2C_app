@@ -1,9 +1,11 @@
 import styled, { css } from 'styled-components'
 
-/**
- * テキストインプット
- */
-const Input = styled.input<{ hasError?: boolean; hasBorder?: boolean }>`
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
+  hasError?: boolean
+  hasBorder?: boolean
+}
+
+const Input = styled.input<InputProps>`
   color: ${({ theme }) => theme.colors.inputText};
   ${({ theme, hasBorder, hasError }) => {
     if (hasBorder) {

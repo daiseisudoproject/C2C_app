@@ -45,6 +45,7 @@ export type TextProps = {
   paddingRight?: Responsive<Space>
   paddingBottom?: Responsive<Space>
   paddingLeft?: Responsive<Space>
+  children?: React.ReactNode;
 }
 
 const variants = {
